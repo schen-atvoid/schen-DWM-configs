@@ -1,0 +1,68 @@
+#################################################################
+# KEYBOARD BINDINGS FOR ANY TWM
+#################################################################
+
+#################################################################
+# SUPER + FUNCTION KEYS
+#################################################################
+
+#################################################################
+# SUPER + ... KEYS
+#################################################################
+
+#################################################################
+# SUPER + SHIFT KEYS
+#################################################################
+
+#dmenu
+super + shift + d
+	dmenu_run -i -nb '#191919' -nf '#fea63c' -sb '#fea63c' -sf '#191919' -fn 'NotoMonoRegular:bold:pixelsize=14'
+
+#rofi
+#super + d
+    #~/.config/arco-dwm/launcher/launcher.sh
+#reload sxhkd:
+super + shift + s
+	pkill -USR1 -x sxhkd
+
+#Firefox:
+super + f
+	firefox
+
+#drop-down-terminal
+super + shift + t
+	xfce4-terminal --drop-down
+
+
+#################################################################
+# CONTROL + ALT KEYS
+#################################################################
+
+#Keyboard dependent
+#alacritty
+#ctrl + alt + KP_Enter
+#     alacritty
+
+#################################################################
+# CONTROL + SHIFT KEYS
+#################################################################
+
+#xfce4-terminal dropdown
+ctrl + shift + t
+    xfce4-terminal --drop-down
+
+#################################################################
+# ALT + ... KEYS
+#################################################################
+
+#Wallpaper next
+alt + n
+    variety -n
+
+#Wallpaper previous
+alt + p
+    variety -p
+
+#Wallpaper favorite
+alt + f
+    variety -f
