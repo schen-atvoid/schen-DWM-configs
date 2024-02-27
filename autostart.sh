@@ -32,7 +32,7 @@ run "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
 #picom -b  --config ~/.config/arco-dwm/picom.conf &
 #run "numlockx on"
 run nvidia-settings --load-config-only
-run "volumeicon"
+run volumeicon
 run fcitx
 run slstatus &
 sxhkd -c ~/.dwm/sxhkdrc &
