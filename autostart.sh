@@ -26,13 +26,15 @@ run "nm-applet"
 run "pamac-tray"
 run "variety"
 run "xfce4-power-manager"
-run "blueberry-tray"
+#run "blueberry-tray"
 run "/usr/lib/xfce4/notifyd/xfce4-notifyd"
 run "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
+run "volumeicon"
+run "blueman-applet"
 #picom -b  --config ~/.config/arco-dwm/picom.conf &
 #run "numlockx on"
 run nvidia-settings --load-config-only
-run volumeicon
+#run volumeicon
 run fcitx
 run slstatus &
 sxhkd -c ~/.dwm/sxhkdrc &
