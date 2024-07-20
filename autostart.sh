@@ -10,7 +10,7 @@ function run {
 #run "dex $HOME/.config/autostart/arcolinux-welcome-app.desktop"
 
 ######## My default monitor setting Start ########
-xrandr --output HDMI-0 --mode 1920x1080 --pos 2612x180 --rotate normal --output DP-0 --off --output DP-1 --off --output HDMI-1 --off --output DP-2 --primary --mode 2560x1440 --pos 0x0 --rotate normal --output DP-3 --off --output DP-4 --off --output DP-5 --off
+xrandr --output HDMI-0 --off --output DP-0 --mode 2560x1440 --pos 3840x266 --rotate normal --output DP-1 --off --output HDMI-1 --off --output DP-2 --primary --mode 3840x2160 --pos 0x0 --rotate normal --output DP-3 --off --output DP-4 --off --output DP-5 --off
 ######## My default monitor setting End ########
 
 #run "xrandr --output VGA-1 --primary --mode 1360x768 --pos 0x0 --rotate normal"
@@ -29,6 +29,7 @@ run "xfce4-power-manager"
 #run "blueberry-tray"
 run "/usr/lib/xfce4/notifyd/xfce4-notifyd"
 run "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
+#run "numlockx on"
 run "volumeicon"
 run "blueman-applet"
 #picom -b  --config ~/.config/arco-dwm/picom.conf &
@@ -41,8 +42,8 @@ sxhkd -c ~/.dwm/sxhkdrc &
 #run "nitrogen --restore"
 #run "conky -c $HOME/.config/arco-dwm/system-overview"
 #you can set wallpapers in themes as well
-#feh --bg-fill /usr/share/backgrounds/archlinux/arch-wallpaper.jpg &
-#feh --bg-fill /usr/share/backgrounds/arcolinux/arco-wallpaper.jpg &
+feh --bg-fill /home/jessie/Pictures/wall/Sci-Aircraft.jpg &
+feh --bg-fill /home/jessie/Pictures/wall/Sci-Aircraft.jpg &
 #wallpaper for other Arch based systems
 #feh --bg-fill /usr/share/archlinux-tweak-tool/data/wallpaper/wallpaper.png &
 #run applications from startup
