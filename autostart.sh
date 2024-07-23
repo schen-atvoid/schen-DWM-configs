@@ -9,6 +9,10 @@ function run {
 
 #run "dex $HOME/.config/autostart/arcolinux-welcome-app.desktop"
 
+# Load Xresources
+#echo "Xft.dpi: 144" | xrdb -merge
+#xrdb -merge ~/.Xresources
+
 ######## My default monitor setting Start ########
 
 xrandr --output HDMI-0 --off \
@@ -19,6 +23,8 @@ xrandr --output HDMI-0 --off \
        --output DP-3 --off \
        --output DP-4 --off \
        --output DP-5 --off
+
+echo "Xft.dpi: 120" | xrdb -merge
 
 ######## My default monitor setting End ########
 
