@@ -24,7 +24,7 @@ xrandr --output HDMI-0 --off \
        --output DP-4 --off \
        --output DP-5 --off
 
-echo "Xft.dpi: 120" | xrdb -merge
+echo "Xft.dpi: 130" | xrdb -merge
 
 ######## My default monitor setting End ########
 
@@ -57,8 +57,7 @@ sxhkd -c ~/.dwm/sxhkdrc &
 #run "nitrogen --restore"
 #run "conky -c $HOME/.config/arco-dwm/system-overview"
 #you can set wallpapers in themes as well
-feh --bg-fill /home/jessie/Pictures/wall/Sci-Aircraft.jpg &
-feh --bg-fill /home/jessie/Pictures/wall/Sci-Aircraft.jpg &
+#feh --bg-fill /home/userName/Pictures/xxx.jpg &
 #wallpaper for other Arch based systems
 #feh --bg-fill /usr/share/archlinux-tweak-tool/data/wallpaper/wallpaper.png &
 #run applications from startup
