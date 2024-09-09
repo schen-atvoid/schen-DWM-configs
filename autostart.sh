@@ -10,21 +10,32 @@ function run {
 #run "dex $HOME/.config/autostart/arcolinux-welcome-app.desktop"
 
 # Load Xresources
-#echo "Xft.dpi: 144" | xrdb -merge
+echo "Xft.dpi: 144" | xrdb -merge
 #xrdb -merge ~/.Xresources
 
 ######## My default monitor setting Start ########
 
-xrandr --output HDMI-0 --off \
-       --output DP-0 --mode 2560x1440 --rate 59.95 --pos 3840x266 --rotate normal \
-       --output DP-1 --off \
-       --output HDMI-1 --off \
-       --output DP-2 --primary --mode 3840x2160 --rate 143.96 --pos 0x0 --rotate normal \
-       --output DP-3 --off \
-       --output DP-4 --off \
-       --output DP-5 --off
+#xrandr --output HDMI-0 --off \
+#       --output DP-4 --mode 2560x1440 --rate 59.95 --pos 3840x134 --rotate normal \
+#--scale 1.2x1.2 \
+#       --output DP-1 --off \
+#       --output HDMI-1 --off \
+#       --output DP-2 --primary --mode 3840x2160 --rate 143.96 --pos 0x0 --rotate normal \
+#       --output DP-3 --off \
+#       --output DP-4 --off \
+#       --output DP-5 --off
 
-echo "Xft.dpi: 130" | xrdb -merge
+xrandr	--output HDMI-0 --off \
+	--output DP-4 --mode 2560x1440 --rate 59.95 --pos 3840x134 --rotate normal \
+	--output DP-1 --off   \
+	--output HDMI-1 --off \
+	--output DP-2 --primary --mode 3840x2160 --rate 143.96 --pos 0x0 --rotate normal \
+	--output DP-3 --off   \
+	--output DP-0 --off   \
+	--output DP-5 --off
+
+
+#echo "Xft.dpi: 128" | xrdb -merge
 
 ######## My default monitor setting End ########
 
