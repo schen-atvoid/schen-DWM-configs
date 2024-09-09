@@ -26,7 +26,7 @@ echo "Xft.dpi: 144" | xrdb -merge
 #       --output DP-5 --off
 
 xrandr	--output HDMI-0 --off \
-	--output DP-4 --mode 2560x1440 --rate 59.95 --pos 3840x134 --rotate normal \
+	--output DP-4 --mode 2560x1440 --rate 59.95 --pos 3840x134 --rotate normal --scale 1.2x1.2 \
 	--output DP-1 --off   \
 	--output HDMI-1 --off \
 	--output DP-2 --primary --mode 3840x2160 --rate 143.96 --pos 0x0 --rotate normal \
